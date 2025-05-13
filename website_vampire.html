@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Vampire System</title>
+  <link rel="stylesheet" href="website_vampire.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">The Vampire System</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#signin">Sign In</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>My Vampire System</h1>
+      <p>A curse. A power. A thirst for blood that never ends.</p>
+      <a href="#episodes" class="cta-button">Enter Sarthak's World</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About the Story</h2>
+    <p>Sarthak was an orphan—until he discovered a book that changed his life forever. Cursed with the thirst for blood, he now walks the line between monster and man. Dive into his journey through shadows, secrets, and power.</p>
+  </section>
+
+  <!-- Characters Section -->
+  <section class="characters">
+    <h2>Main Characters</h2>
+    <div class="character-grid">
+      <div class="character-card">
+        <img src="/Users/kinjalgawali/Downloads/HTML & CSS -/Workshop /sarthak.png" alt="Sarthak">
+        <h3>Sarthak</h3>
+        <p>A cursed soul chosen by the Vampire System, Sarthak must battle his bloodlust and destiny to protect those he loves.</p>
+      </div>
+      <div class="character-card">
+        <img src="/Users/kinjalgawali/Downloads/HTML & CSS -/Workshop /arjun.png" alt="Arjun">
+        <h3>Arjun</h3>
+        <p>A member of a feared and powerful hidden family, Arjun carries two other personalities within him. While many fear him, few know the truth about his origin and potential.</p>
+      </div>
+      <div class="character-card">
+        <img src="/Users/kinjalgawali/Downloads/HTML & CSS -/Workshop /leo.png" alt="Leo">
+        <h3>Leo</h3>
+        <p>Though blind, Leo sees more than anyone else. A legendary fighter and wise teacher, he guides others with unmatched clarity and strength.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Episodes Section -->
+  <section class="episodes" id="episodes">
+    <h2>Episodes</h2>
+    <div class="episode-list">
+      <div class="episode-card">Episode 1: The Blood Book</div>
+      <div class="episode-card">Episode 2: Thirst Begins</div>
+      <div class="episode-card">Episode 3: Into the Night</div>
+      <div class="episode-card">Episode 4: Dark Awakening</div>
+      <div class="episode-card">Episode 5: The Hunt</div>
+
+      <div class="more-episodes hidden">
+        <div class="episode-card">Episode 6: Luna's Secret</div>
+        <div class="episode-card">Episode 7: Blood Pact</div>
+        <div class="episode-card">Episode 8: Broken Bonds</div>
+        <div class="episode-card">Episode 9: Nightfall Trials</div>
+        <div class="episode-card">Episode 10: The Elder's Wrath</div>
+      </div>
+
+      <button class="more-btn" onclick="toggleEpisodes()">Show More</button>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Vampire Services</h2>
+    <div class="service-grid">
+      <div class="service-card">Blood Tracking System</div>
+      <div class="service-card">Night Vision Upgrade</div>
+      <div class="service-card">Shadow Movement Training</div>
+      <div class="service-card">Coven Communication</div>
+    </div>
+  </section>
+
+  <!-- Sign In Section -->
+  <section class="signin" id="signin">
+    <h2>Sign In to Your Bloodline</h2>
+    <form class="signin-form">
+      <input type="text" placeholder="Enter your name" required>
+      <input type="password" placeholder="Enter your secret code" required>
+      <button type="submit">Sign In</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Vampire System. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Pocket FM</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleEpisodes() {
+      const hidden = document.querySelector('.more-episodes');
+      hidden.classList.toggle('hidden');
+      const btn = document.querySelector('.more-btn');
+      btn.textContent = hidden.classList.contains('hidden') ? 'Show More' : 'Show Less';
+    }
+  </script>
+</body>
+</html>
+
+
+
